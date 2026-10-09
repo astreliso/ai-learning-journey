@@ -1,0 +1,41 @@
+# ===== 系统垃圾 =====
+.DS_Store
+._*
+
+# ===== Python / 编辑器 =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+*.iml
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== 数据（绝不入库）=====
+datasets/*
+!datasets/.gitkeep
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.h5
+*.mat
+*.pkl
+*.joblib
+
+# ===== 缓存 / 临时输出 =====
+.accelerate/
+cache/
+temp/
+*.ts
+*.m3u8*
+*.html
+
+# ===== 密钥凭据 =====
+.env
+*.key
+token.txt
+secrets.yaml
