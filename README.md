@@ -95,16 +95,6 @@ CV、语音、推荐系统、强化学习、机器人、医疗时序、GNN/PINN�
 ## 说明
 
 - 数据文件不入库，规则见 `.gitignore`
-
-| 文件 | 来源 | 用在哪 |
-|---|---|---|
-| `mnist-demo.csv` | 课程提供 | 逻辑回归多分类 |
-| `fashion-mnist-demo.csv` | 课程提供 | 分类练习 |
-| `vgsales.csv` | Kaggle · gregorut/videogamesales | 类别编码练习 |
-| `Pokemon.csv` | Kaggle · abcsds/pokemon | 类别编码练习 |
-| `song_views.csv` |Kaggle · 用户名/数据集名 | 时序特征练习 |
-| `mnist-original.mat` | 待确认 | 集成学习 |
-
 - 笔记以 ipynb 为主，重要结论整理成 md
 - 目录和文件名用英文 snake_case，笔记正文用中文
 

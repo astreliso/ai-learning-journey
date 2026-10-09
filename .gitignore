@@ -39,3 +39,4 @@ temp/
 *.key
 token.txt
 secrets.yaml
+!datasets/README.md
