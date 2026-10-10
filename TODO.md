@@ -18,3 +18,7 @@
 - [ ] `01_logistic_regression_with_linear_loundary.py` → `..._boundary.py`（拼写错误）
 - [ ] `03_Non-linear_regression.py` → `03_non_linear_regression.py`（去连字符）
 - [ ] 中文名 notebook → 英文名（5 个）
+
+
+## 待拆分（有需要时再做）
+- [ ] 有些 notebook 里混合了多个主题（如特征工程），复习到对应内容时顺手拆分
