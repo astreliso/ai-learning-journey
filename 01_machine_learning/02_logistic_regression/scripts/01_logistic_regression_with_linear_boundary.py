@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 from algorithm.logistic_regression import LogisticRegression
 
-data = pd.read_csv('../data/iris.csv')
+data = pd.read_csv('../../../datasets/iris.csv')
 iris_types = ['SETOSA','VERSICOLOR','VIRGINICA']
 X_axis = 'petal_length'
 y_axis = 'petal_width'

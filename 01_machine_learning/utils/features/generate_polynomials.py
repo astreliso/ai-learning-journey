@@ -4,7 +4,7 @@ import numpy as np
 from .normalize import normalize
 
 
-def generate_polynomials(dataset, polynomial_degree, normalize_data=False):
+def generate_polynomials(dataset, polynomial_degree):
     """变换方法：
     x1, x2, x1^2, x2^2, x1*x2, x1*x2^2, etc.
     """
@@ -38,7 +38,6 @@ def generate_polynomials(dataset, polynomial_degree, normalize_data=False):
             polynomial_feature = (dataset_1 ** (i - j)) * (dataset_2 ** j)
             polynomials = np.concatenate((polynomials, polynomial_feature), axis=1)
 
-    if normalize_data:
-        polynomials = normalize(polynomials)[0]
+
 
     return polynomials

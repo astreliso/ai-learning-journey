@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 plotly.offline.init_notebook_mode()
 from algorithm.linear_regression import LinearRegression
 
-data = pd.read_csv('../data/world-happiness-report-2017.csv')
+data = pd.read_csv('../../../datasets/world-happiness-report-2017.csv')
 
 # 得到训练和测试数据
 train_data = data.sample(frac=0.8, random_state=42)
@@ -67,7 +67,7 @@ plot_layout = go.Layout(
 )
 plot_data = [plot_training_trace, plot_test_trace]
 plot_figure = go.Figure(data=plot_data, layout=plot_layout)
-plotly.offline.plot(plot_figure,filename='../temp/data_scatter.html')
+plot_figure.show(renderer="browser")
 
 
 num_iterations = 500
@@ -128,8 +128,6 @@ plot_prediction_trace = go.Scatter3d(
 
 plot_data = [plot_training_trace, plot_test_trace, plot_prediction_trace]
 plot_figure = go.Figure(data=plot_data, layout=plot_layout)
-plotly.offline.plot(plot_figure,filename='../temp/prediction_plane.html')
-
-
+plot_figure.show(renderer="browser")
 
 

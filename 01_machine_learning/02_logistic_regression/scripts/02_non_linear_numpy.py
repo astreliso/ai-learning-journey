@@ -5,7 +5,7 @@ import math
 
 from algorithm.logistic_regression import LogisticRegression
 
-data = pd.read_csv('../data/microchips-tests.csv')
+data = pd.read_csv('../../../datasets/microchips-tests.csv')
 
 # 类别标签
 validities = [0, 1]
@@ -81,8 +81,8 @@ Z = np.zeros((samples, samples))
 # 结果展示
 for x_index, x in enumerate(X):
     for y_index, y in enumerate(Y):
-        data = np.array([[x, y]])
-        Z[x_index][y_index] = logistic_regression.predict(data)[0][0]
+        sample = np.array([[x, y]])
+        Z[x_index][y_index] = logistic_regression.predict(sample)[0][0]
 
 positives = (y_train == 1).flatten()
 negatives = (y_train == 0).flatten()
@@ -98,3 +98,4 @@ plt.title('Microchips Tests')
 plt.legend()
 
 plt.show()
+
